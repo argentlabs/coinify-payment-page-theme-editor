@@ -28,7 +28,7 @@ h4 {
 
 .card-data-column-left,
 .card-data-column-right {
-  padding: 32px;
+  padding: 32px 32px 0;
 }
 
 button {
@@ -45,4 +45,8 @@ button.continue-button {
   margin-bottom: 10px;
   font-size: 14px;
   white-space: nowrap;
+}
+
+.card-order-container {
+  margin-bottom: 24px;
 }
