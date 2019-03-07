@@ -1,0 +1,179 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  color: rgb(84, 84, 86);
+  font-size: 13.5px;
+}
+
+.ssl-secured {
+}
+
+h4 {
+  font-weight: normal;
+  color: #545653;
+}
+
+strong,
+.strong {
+  font-weight: 600;
+}
+
+
+
+/*********************************************
+ * Default layout (Mobile first)
+ ********************************************/
+.card-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-data-column-left,
+.card-data-column-right {
+  padding: 24px;
+}
+
+.card-data-column-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-data-column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/*********************************************
+ * Desktop layout
+ ********************************************/
+@media only screen and (min-width: 620px) {
+  .card-data {
+    flex-direction: row;
+  }
+
+  .card-data-column-right {
+    min-width: 320px;
+    margin-left: auto;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+/*********************************************
+ * Form styles
+ ********************************************/
+button {
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button.continue-button {
+  display: block;
+  background-color: #8ec165;
+  border: 1px solid #8ec165;
+  color: white;
+  margin-bottom: 24px;
+}
+
+button.cancel-button {
+  display: block;
+  background-color: #ececec;
+  border: 1px solid #b7b7b7;
+  color: #666666;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.card-field-label {
+  display: block;
+  font-weight: 600;
+  color: #545653;
+}
+
+.card-data-input-field {
+  width: 100%;
+  border: 1px solid #dedede;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.card-data-input-field:focus {
+  outline: none;
+  border: solid 1px rgb(109, 189, 191);
+}
+
+.card-data-row,
+.card-expire-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-mmyy-cvv {
+  max-width: 60px;
+}
+
+.card-mmyy-cvv:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+
+
+
+
+/*********************************************
+ * Purchase details
+ ********************************************/
+.card-order-divider {
+  border-bottom: solid 1px #EAEAEA;
+}
+
+.card-order-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: #545653;
+  font-size: 12px;
+  white-space: nowrap;
+}

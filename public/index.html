@@ -8,40 +8,49 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg">
     <title>Payment</title>
 
+    <link rel="stylesheet" type="text/css" href="coinify.css">
     <link rel="stylesheet" type="text/css" href="argent.css">
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div class="payment-container">
     <form class="card-data">
-        <div class="card-data-column-left"><p class="card-column-header">Payment details</p>
-            <label class="card-field-label">Name on card<br>
+        <div class="card-data-column-left payment-details">
+            <h4 class="card-column-header">Payment details</h4>
+            <div class="form-group">
+                <label class="card-field-label" for="cardName">Name on card</label>
                 <input class="card-data-input-field " id="cardName" type="text" placeholder="Cardholders name" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII='); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
-            </label>
-            <br>
-            <label class="card-field-label">Card number
-                <br>
-                <input class="card-data-input-field " id="cardNumber" type="text" placeholder="Card number" value="">
-            </label>
-            <br>
-            <div class="card-data-row">
-                <span class="card-expire-section">
-                    <label class="card-mmYYcvv card-field-label no-line-break card-data-field-margin">Month
-                        <input class="card-data-input-field card-data-max-w1" id="cardMonth" type="text" placeholder="MM" value="">
-                    </label>
-                    <label class="card-mmYYcvv card-field-label no-line-break card-data-field-margin">Year
-                        <input class="card-data-input-field card-data-max-w2" id="cardYear" type="text" placeholder="YY" value="">
-                    </label>
-                </span>
+            </div>
 
-                <label class="card-mmYYcvv card-field-label no-line-break">CVV
-                    <input class="card-data-input-field card-data-max-w3" id="cardCVV" type="text" placeholder="CVV" value="">
-                </label>
+            <div class="form-group">
+                <label class="card-field-label" for="cardNumber">Card number</label>
+                <input class="card-data-input-field " id="cardNumber" type="text" placeholder="Card number">
+            </div>
+
+            <div class="card-data-row">
+                <div class="card-expire-section">
+                    <div class="card-mmyy-cvv form-group">
+                        <label class="card-field-label" for="cardMonth">Month</label>
+                        <input class="card-data-input-field card-data-max-w1" id="cardMonth" type="text" placeholder="MM">
+                    </div>
+
+                    <div class="card-mmyy-cvv form-group">
+                        <label class="card-field-label" for="cardYear">Year</label>
+                        <input class="card-data-input-field card-data-max-w2" id="cardYear" type="text" placeholder="YY">
+                    </div>
+                </div>
+
+                <div class="card-mmyy-cvv form-group">
+                    <label class="card-field-label" for="cardCVV">CVV</label>
+                    <input class="card-data-input-field card-data-max-w3" id="cardCVV" type="text" placeholder="CVV">
+                </div>
             </div>
         </div>
-        <div class="card-data-column-right">
+        <div class="card-data-column-right purchase-details">
+            <button class="continue-button" disabled type="submit"><span>Continue</span></button>
+
             <div class="card-order-container">
-                <p class="card-column-header">Your purchase</p>
+                <h4 class="card-column-header">Your purchase</h4>
                 <div class="card-order-line" style="display: flex;">
                     <span class="card-order-item">Amount to Purchase</span>
                     <span class="card-order-price">BTC 0.00566319</span>
@@ -54,7 +63,7 @@
                     <span class="card-order-item">To be Received</span>
                     <span class="card-order-price">BTC 0.00556319</span>
                 </div>
-                <div class="card-order-devider"></div>
+                <div class="card-order-divider"></div>
                 <div class="card-order-line">
                     <span class="card-order-item">Amount</span>
                     <span class="card-order-price">€20.00</span>
@@ -64,16 +73,15 @@
                     <span class="card-order-price">€0.70</span>
                 </div>
                 <div class="card-order-line">
-                    <span class="card-order-item bold">Total cost</span>
-                    <span class="card-order-price bold">€20.70</span>
+                    <span class="card-order-item strong">Total cost</span>
+                    <span class="card-order-price strong">€20.70</span>
                 </div>
-                <div class="card-order-devider"></div>
+                <div class="card-order-divider"></div>
                 <div class="card-order-line card-order-price-line">
                     <span class="card-order-item">Transaction time</span>
                     <span class="card-order-price">~2 hours</span>
                 </div>
             </div>
-            <button class="card-data-continue-button disabled" type="submit"><span>Continue</span></button>
         </div>
          
     </form>
