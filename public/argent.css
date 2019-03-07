@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(84, 84, 86);
+  font-size: 13.5px;  
+}
+
+.ssl-secured {
+}
+
+.card-data {
+  display: flex;
+  flex-direction: row;
+  min-width: 486px;
+  min-height: 315px;
+}
+
+.card-data-column-left {
+  padding: 24px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-data-column-right {
+  padding: 24px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+  justify-content: space-between;
+  min-width: 240px;
+  margin-left: auto;
+  margin-right: 20px;
+} 
+
+.no-line-break {
+  white-space: nowrap;
+}
+
+.card-data-field-margin {
+  margin-right: 15px;
+}
+
+.card-data-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.card-order-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.card-order-devider {
+  border-bottom: solid 1px #EAEAEA;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.card-order-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: #545653;
+}
+
+.card-order-line span {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.card-order-item {
+}
+
+.card-order-price {
+  font-weight: 500;
+}
+
+.card-expire-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-data-max-w1 {
+  max-width: 60px;
+}
+
+.card-data-max-w2 {
+  max-width: 60px;
+}
+
+.card-data-max-w3 {
+  max-width: 75px;
+}
+
+.loading-dots--dot {
+  background-color: rgba( 100, 100, 100, 0.5 ) !important;
+}
+
+input:focus { 
+  outline: none;
+  border: solid 1px rgb(109,189,191);
+}
+
+.card-order-price-line {
+}
+
+.card-data-input-field {
+  border: solid 1px #DEDEDE;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 13px;
+  margin-top: 8px;
+}
+
+.card-data-input-field.invalid {
+  border-color: #ff8282;;
+}
+
+.card-form-caption {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card-mmYYcvv {
+  min-width: 20px;
+  max-width: 85px;
+  overflow: hidden;
+}
+
+.card-field-label {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 14px;
+  color: #545653;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-data-continue-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  width: 100%;
+  height: 34px;
+  background-color: #8ec165;
+  border: solid 1px #8ec165;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); */
+}
+
+.card-data-continue-button.disabled {
+  opacity: 0.65;
+}
+
+.card-data-continue-button:focus { 
+  outline: none;
+}
+
+.card-data-cancel-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  width: 100%;
+  height: 34px;
+  background-color: #ececec;
+  border: solid 1px #b7b7b7;
+  border-radius: 2px;
+  color: #666666;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); */
+}
+
+.card-data-cancel-button:focus { 
+  outline: none;
+}
+
+.card-data-error-message-container {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+  color: #D8000C;
+  background-color: #FFBABA;
+  display: flex;
+  padding: 12px;
+}
+
+/*.card-data-error-message-container:before {
+  font-family: isabelc;
+  margin-right: 16px;
+  content: '\e80d';
+}*/
+
+.card-column-header {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 20px;
+  font-weight: medium;
+  font-style: normal;
+  margin-top: 12px;
+  margin-bottom: 13px !important;
+  color: #545653;
+}
+
+.card-data-column-left > p.card-column-header {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #545653;
+}
+
+.card-order-container > p.card-column-header {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #545653;
+}
+
+/*********************************************
+ * Deny retry page
+ ********************************************/
+
+.payment-processing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.payment-processing > div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-processing > div.container > div.message-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.payment-processing > div.container > div.message-container > svg.icon {
+  margin-bottom: 15px;
+}
+
+.payment-processing > div.container > div.message-container > div.caption {
+  color: #666666;
+  font-size: 30px; 
+  font-family: 'Roboto', sans-serif, Helvetica;
+  margin-bottom: 10px;
+}
+
+.payment-processing > div.container > div.message-container > div.desc {
+  color: #666666;
+  font-size: 20px; 
+  font-family: 'Roboto', sans-serif, Helvetica;
+}
+
+
+.retry-cancel-button-container {
+  width: 150px;
+}
+
+.retry-cancel-button-container > button.card-data-continue-button {
+  margin-top: 48px;
+  min-width: 150px !important;
+}
+
+.retry-cancel-button-container > button.card-data-cancel-button {
+  margin-top: 16px;
+  min-width: 150px !important;
+}
+
+/*********************************************
+ * Mobile layout
+ ********************************************/
+@media only screen and (max-width: 620px)  {
+  .card-data {
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+  }
+  .card-data-column-left {
+    width: 100%;
+    padding: 0px;
+  }
+  .card-data-column-right {
+    width: 100%;
+    padding: 0px;
+    flex-direction: column-reverse;
+  }
+  div.card-data-column-left > label,
+  div.card-data-column-left > p,
+  div.card-data-column-left > .card-data-row {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .card-data-row {
+    margin-bottom: 24px;
+  }
+  .card-data-column-right > .card-order-container,
+  .card-data-column-right > .card-data-continue-button {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .card-data-continue-button {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    width: initial;
+  }
+  .card-data-error-message-container {
+    margin-right: 24px;
+  }
+}
