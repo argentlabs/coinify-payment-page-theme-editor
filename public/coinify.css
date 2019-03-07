@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  color: #545653;
 }
 
 input,
@@ -30,7 +31,6 @@ input {
 
 h4 {
   font-weight: normal;
-  color: #545653;
 }
 
 strong,
@@ -127,7 +127,7 @@ button:disabled {
 .card-field-label {
   display: block;
   font-weight: 600;
-  color: #545653;
+  margin-bottom: 0.5rem;
 }
 
 .card-data-input-field {
@@ -173,7 +173,6 @@ button:disabled {
   justify-content: space-between;
   margin-top: 7px;
   margin-bottom: 7px;
-  color: #545653;
   font-size: 12px;
   white-space: nowrap;
 }

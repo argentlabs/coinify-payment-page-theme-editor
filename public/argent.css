@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,600');
+
+:root {
+  /* Argent colour palette */
+  --argent-orange: rgb(255, 135, 91);
+  --argent-orange-wcag: rgb(243, 106, 61);
+  --argent-orange-reversed: rgb(0, 120, 164);
+  --argent-green-wcag: rgb(2,187,168);
+  --argent-black: rgb(51, 51, 50);
+  --argent-black-transparent: rgba(51, 51, 50, 0.08);
+  --argent-dark-charcoal: rgb(92, 91, 89);
+  --argent-light-charcoal: rgb(143, 142, 140);
+  --argent-clay: rgb(194, 192, 190);
+  --argent-sand: rgb(245, 243, 240);
+  --argent-mayo: rgb(250, 248, 245);
+
+  --danger: rgb(193, 32, 38);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: var(--argent-black);
+}
+
+h4 {
+  font-weight: 600;
+}
+
 .card-data-column-left,
 .card-data-column-right {
   padding: 32px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+button.continue-button {
+  background-color: var(--argent-orange);
+  border: 0;
+}
+
+.card-order-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  white-space: nowrap;
 }
