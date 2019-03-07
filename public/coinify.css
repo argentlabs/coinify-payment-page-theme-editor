@@ -27,6 +27,7 @@ input {
 }
 
 h4 {
+  margin-top: 0;
   font-weight: normal;
 }
 
@@ -117,6 +118,10 @@ button:disabled {
   cursor: auto;
 }
 
+.loading-dots--dot {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -152,6 +157,14 @@ button:disabled {
 
 .card-mmyy-cvv:not(:last-of-type) {
   margin-right: 16px;
+}
+
+
+/* Validation and errors */
+.card-data-error-message-container {
+  color: #D8000C;
+  background-color: #FFBABA;
+  padding: 16px;
 }
 
 
