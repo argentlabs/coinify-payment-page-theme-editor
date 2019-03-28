@@ -75,6 +75,7 @@ h4 {
   .card-data-column-right {
     min-width: 320px;
     margin-left: auto;
+    flex-direction: column;
   }
 }
 
