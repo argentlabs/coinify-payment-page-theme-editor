@@ -31,8 +31,7 @@ h4 {
   font-weight: normal;
 }
 
-strong,
-.strong {
+.bold {
   font-weight: 600;
 }
 
@@ -59,7 +58,7 @@ strong,
 
 .card-data-column-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
 }
 
@@ -76,7 +75,6 @@ strong,
   .card-data-column-right {
     min-width: 320px;
     margin-left: auto;
-    flex-direction: column-reverse;
   }
 }
 
@@ -94,7 +92,7 @@ button {
   border-radius: 2px;
 }
 
-button.continue-button {
+button.card-data-continue-button {
   display: block;
   background-color: #8ec165;
   border: 1px solid #8ec165;
@@ -113,7 +111,8 @@ button:focus {
   outline: none;
 }
 
-button:disabled {
+button:disabled,
+button.disabled {
   opacity: 0.65;
   cursor: auto;
 }
@@ -144,6 +143,11 @@ button:disabled {
   border: solid 1px rgb(109, 189, 191);
 }
 
+/* If input is inside label */
+.card-field-label .card-data-input-field {
+  margin-top: 0.5rem;
+}
+
 .card-data-row,
 .card-expire-section {
   display: flex;
@@ -151,11 +155,11 @@ button:disabled {
   justify-content: space-between;
 }
 
-.card-mmyy-cvv {
+.card-mmYYcvv {
   max-width: 60px;
 }
 
-.card-mmyy-cvv:not(:last-of-type) {
+.card-mmYYcvv:not(:last-of-type) {
   margin-right: 16px;
 }
 
@@ -174,6 +178,7 @@ button:disabled {
 /*********************************************
  * Purchase details
  ********************************************/
+.card-order-devider,
 .card-order-divider {
   border-bottom: solid 1px #EAEAEA;
 }

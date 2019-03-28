@@ -22,7 +22,8 @@ body {
   color: var(--argent-black);
 }
 
-h4 {
+h4,
+p.card-column-header {
   font-weight: 600;
 }
 
@@ -35,7 +36,7 @@ button {
   border-radius: 20px;
 }
 
-button.continue-button {
+button.card-data-continue-button {
   background-color: var(--argent-orange);
   border: 0;
 }
